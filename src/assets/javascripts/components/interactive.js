@@ -80,7 +80,6 @@ function Toggle({element, onChange, index, contentWrapper, stepsSelector, conten
     contentCollection?.forEach(c => {
       c.classList.replace('d-block', 'd-none');
       contentCollection[stepIndex].classList.replace('d-none', 'd-block');
-      SetMarkdownContent(`set-markdown-content-${stepIndex}`);
     });
 
     stepsCollection?.forEach(s => {
@@ -95,9 +94,6 @@ function Toggle({element, onChange, index, contentWrapper, stepsSelector, conten
         footer.style.marginTop = redoc.clientHeight + "px";
       }
     });
-    if (stepIndex > 0) {
-      SetMarkdownContent(`set-markdown-content-${stepIndex}`);
-    };
   };
 
   const init = () => {
@@ -152,23 +148,13 @@ export function HandleApiSpecSelect({selectorId, downloadSelectorId, displaySele
     let elementsApi = document.createElement('elements-api');
     elementsApi.setAttribute('apiDescriptionUrl', url);
     elementsApi.setAttribute('router', 'hash');
-    elementsApi.setAttribute('layout', 'sidebar');
+    elementsApi.setAttribute('layout', 'responsive');
     elementsApi.setAttribute('hideExport', 'true');
     handleContent(displaySelector, elementsApi);
   });
 }
 
-export function SetMarkdownContent(id) {
-	let content = document.getElementById(id);
-  let atr = content?.getAttribute("converted");
-	if (content && atr === null) {
-		var converter = new showdown.Converter();
-		converter?.setOption('ghCompatibleHeaderId', true);
-		let html = converter?.makeHtml(content.textContent);
-		content.innerHTML = html;
-    content.setAttribute("converted", "true");
-	}
-}
+
 
 function initRedoc(url) {
   let wrapper = document.getElementById("redoc-wrapper");

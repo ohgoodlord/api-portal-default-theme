@@ -1,5 +1,5 @@
 import { SortBy } from './components/sorting.js';
-import { Interactive, HandleApiSpecSelect, SetMarkdownContent, HandleTruncateText } from './components/interactive.js';
+import { Interactive, HandleApiSpecSelect, HandleTruncateText } from './components/interactive.js';
 import { onProductFormSubmit, onAppFormSubmit, handleTLSCertificate } from './components/submit-form.js';
 import { fromSearch, fromButton } from './components/set-element-value.js';
 import { decoratePasswordReveal } from './components/decorate-password-reveal.js';
@@ -142,9 +142,6 @@ activeTab?.classList.add('sidebar-active');
 
 const roleOptions = document.querySelector('#selectRolesId');
 RoleSelection(roleOptions);
-
-SetMarkdownContent("set-markdown-content-0");
-SetMarkdownContent("set-markdown-content-blog");
 
 let productDocMenu = document.getElementsByClassName('product-doc-side-menu');
 SelectDocMenuItem(productDocMenu);

@@ -87,33 +87,15 @@
                 <div class="card-body">
                   <h2 class="card-title title-bold">
                     <span class="card-number">2</span>
-                    Select a product plan
+                    Selected Plan
                   </h2>
-                  <p class="card-text mt-3">Choose the subscription plan that fits your individual needs.</p>
+                  <p class="card-text mt-3">The access request will be created with the following plan</p>
                 </div>
                 <div class="card-footer mt-4">
                   {{ if $request.Products }}
-                    {{ if ne $request.Plan.ID 0}}
-                      {{$plan := $request.Plan}}
-                      <select 
-                        class="form-control w-75" 
-                        id="exampleFormControlSelect-{{$index}}" 
-                        name="plan-for-{{$index}}"
-                        required>
-                          <option value="{{$plan.ID}}"> {{$plan.PlanName}} &nbsp;&nbsp;|&nbsp;&nbsp; Quota: {{ $plan.FormatQuota }},  Rate limit: {{ $plan.FormatRateLimit }}</option>
-                      </select>
-                    {{else}}
-                      <select 
-                        class="form-control w-75" 
-                        id="exampleFormControlSelect-{{$index}}" 
-                        name="plan-for-{{$index}}"
-                        required>
-                        <option value="" selected> Select a plan</option>
-                        {{ range .Catalogue.Plans }}
-                          <option value="{{.ID}}"> {{.PlanName}} &nbsp;&nbsp;|&nbsp;&nbsp; Quota: {{ .FormatQuota }},  Rate limit: {{ .FormatRateLimit }}</option>
-                        {{ end }}
-                      </select>
-                    {{end}}
+                    {{$plan := $request.Plan}}
+                    <input type="hidden" name="plan-for-{{$index}}" value="{{$plan.ID}}"/>
+                    <div class="form-control w-75"> {{$plan.PlanName}} &nbsp;&nbsp;|&nbsp;&nbsp; Quota: {{ $plan.FormatQuota }},  Rate limit: {{ $plan.FormatRateLimit }}</div>
                   {{ end }}
                 </div>
               </div>

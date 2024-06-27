@@ -235,6 +235,11 @@
   font-size: 16px;
 }
 
+
+#oas-display-stoplight .TopNav--mosaic{
+  position: absolute;
+}
+
 #OasApiSelect {
   width: 273px;
   height: 39px;
