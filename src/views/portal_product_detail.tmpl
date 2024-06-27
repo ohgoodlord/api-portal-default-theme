@@ -1,6 +1,8 @@
 <!-- Template used for viewing a particular Product -->
 
 {{ $thisProduct := .product }}
+{{ $user := CurrentUser req }}
+{{$catalogues_for_product := GetCataloguesForProduct req $user $thisProduct.ID}}
 {{ $allCatalogues := .catalogues }}
 {{ $cataloguesLength := len $allCatalogues}}
 {{ $hasDocs := false }}
@@ -58,7 +60,6 @@
 			{{end}}
 		    </div>
 		    <div class="api-product-page__header card__action-buttons">
-			{{ $user := CurrentUser req }}
 			<!--	Not displaying access button for Products with Basic Auth 	-->
 			{{if and (ne $.product.AuthType "ba") (ne $.product.AuthType "custom")}}
 				{{ if $user }}
@@ -109,16 +110,16 @@
 		    </div>
 		</div>
 		{{end}}
-		{{ $upstramUL := ProviderUpstreamURL req $thisProduct.ProviderID }}
-		{{if $upstramUL }}
+		{{ $upstreamURL := ProviderUpstreamURL req $thisProduct.ProviderID }}
+		{{if $upstreamURL }}
 		<div class="api-product-page__info">
 		    <div class="api-product-page__info-title">
 			<h2>Base URL</h2>
 		    </div>
 		    <div class="api-product-page__info-description">
 			<p class="api-product-page__info-description__base-url copy">
-			    {{ $thisProduct.Provider.Configuration.GatewayURL }}
-			    <i class="tyk-icon tykon tykon-copy ml-3" data-copy-value="{{ $thisProduct.Provider.Configuration.GatewayURL }}"></i>
+			    {{ $upstreamURL }}
+			    <i class="tyk-icon tykon tykon-copy ml-3" data-copy-value="{{ $upstreamURL }}"></i>
 			</p>
 		    </div>
 		</div>
@@ -179,10 +180,8 @@
 				</div>
 				<div class="mt-4">
                                     {{ if $user }}
-                                    {{$catalogues_for_plan := GetCataloguesForPlan req .ID $thisProduct.ID}}
-                                    {{$len_catalogues_for_plan := len $catalogues_for_plan}}
-                                    {{if eq $len_catalogues_for_plan 1}}
-                                    {{range $catalogues_for_plan}}
+                                    {{if eq (len $catalogues_for_product) 1}}
+                                    {{range $catalogues_for_product}}
                                     <form method="post" id="add-to-cart-form-b">
                                         <input type="hidden" name="product_id" value={{$thisProduct.ID}}>
                                         <input type="hidden" name="catalogue_id" value="{{ .ID }}">
@@ -191,9 +190,9 @@
                                     </form>
                                     {{end}}
                                     {{else}}
-                                    <button type="button" class="access-with-plan" data-toggle="modal" data-target="#selectCatalogueForPlan">ACCESS WITH THIS PLAN</button>   
+                                    <button type="button" class="access-with-plan" data-toggle="modal" data-target="#selectCatalogueForPlan{{$plan_id}}">ACCESS WITH THIS PLAN</button>   
                                     <form method="post" id="add-to-cart-form-b">
-					<div class="modal fade" id="selectCatalogueForPlan" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal fade" id="selectCatalogueForPlan{{$plan_id}}" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 						<div class="modal-content p-2">
 						    <div class="modal-header justify-content-center">
@@ -209,7 +208,7 @@
 								    </tr>
 								</thead>
 								<tbody>
-								    {{ range $catalogues_for_plan }}
+								    {{ range $catalogues_for_product }}
 								    <tr>
 									<td> {{ .Name }}</td>
 									<td class="text-center">
@@ -319,7 +318,7 @@
 		</div>
 		{{else}}
 		<div id="oas-display-stoplight">
-			<elements-api apiDescriptionUrl="{{$initialAPIOasUrl}}" router="hash" layout="sidebar" hideExport="true"/>
+			<elements-api apiDescriptionUrl="{{$initialAPIOasUrl}}" router="hash" layout="responsive" hideExport="true"/>
 		</div>
 		{{end}}
 		{{else}}
@@ -347,7 +346,7 @@
             {{range $index,$doc := $thisProduct.Docs}}
               <div class="content-wrapper__content-api-docs {{if eq $index 0}}d-block{{else}}d-none{{end}}">
                 <h3 class="text-os-bold-17 dark mb-50">{{$doc.Title}}</h3>
-              {{if $doc.MarkdownEnabled}}
+              {{if and $doc.MarkdownEnabled (gt (len $doc.MarkdownContent) 0)}}
                 <div id="set-markdown-content-{{$index}}" class="api-docs-text">
 				 {{safe_md $doc.MarkdownContent}}
                 </div>
