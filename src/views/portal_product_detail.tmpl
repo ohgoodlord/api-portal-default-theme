@@ -154,6 +154,9 @@
 		    </div>
 		</div>
 		{{end}}
+<!--	Not displaying plans when there are none available for subscription -->
+    {{ $plansLength := len .unique_plans }}
+    {{ if gt $plansLength 0 }}
 <!--	Not displaying plans for Products with Basic Auth 	-->
 		{{if and (ne $.product.AuthType "ba") (ne $.product.AuthType "custom")}}
 		<div class="api-product-page__info">
@@ -240,7 +243,8 @@
 		    </div>
 		</div>
 		{{end}}
-		
+		{{end}}
+
 		<!-- Related Blog posts -->
 		{{if .posts}}
 		<div class="api-product-page__info">
