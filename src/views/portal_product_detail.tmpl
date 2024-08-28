@@ -60,6 +60,7 @@
 			{{end}}
 		    </div>
 		    <div class="api-product-page__header card__action-buttons">
+			<!--	Not displaying access button until DCR is working
 			<!--	Not displaying access button for Products with Basic Auth 	-->
 			{{if and (ne $.product.AuthType "ba") (ne $.product.AuthType "custom")}}
 				{{ if $user }}
@@ -68,6 +69,7 @@
 					</button>
 				{{end}}
 			{{end}}
+			-->
 		    </div>
 		</div>
 		{{ if $thisProduct.Logo.URL }}
