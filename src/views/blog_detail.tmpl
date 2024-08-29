@@ -5,7 +5,7 @@
         <p> {{ .post.CreatedAt | date "2 Jan, 2006" }} <!-- /* Commented until it gets implemented */ {{ .Author }} --> </p>
         <h1>{{.post.Title}}</h1>
         <hr>
-        <p class="lead">
+        <p class="mt-4">
           {{.post.Lede}}
         </p>
         <!-- Preview Image -->
@@ -41,8 +41,9 @@
                   {{ end }}
                   <div class="card-body text-center d-flex flex-column align-content-center justify-content-center p-4">
                     <h2 class="card-title d-flex flex-column justify-content-end mt-3">{{ $val.Title }}</h2>
-                    <p>
-                      {{ $val.Lede }}</p>
+                    <p class="mt-3">
+                      {{ $val.Lede }}
+                    </p>
                   </div>
                   <p class="card-text blog__category align-self-center">
                     <span>
