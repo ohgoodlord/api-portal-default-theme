@@ -177,7 +177,7 @@
                   {{ safe .blocks.FlipFlopLeftImageDescription1.Content}}
                 {{end}}
               </p>
-              <a href="{{.blocks.FlipFlopLeftImageButtonLink1.Content}}" class="btn btn-secondary-outline">{{ safe .blocks.FlipFlopLeftImageButtonLabel1.Content}}</a>
+              <a href="{{.blocks.FlipFlopLeftImageButtonLink1.Content}}" class="btn btn-secondary">{{ safe .blocks.FlipFlopLeftImageButtonLabel1.Content}}</a>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@
                   <p class="card-text">{{ .Description }}</p>
                 </div>
                 <div class="home-card-cta d-flex flex-row align-self-center justify-content-between w-100">
-                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-secondary-outline">More Info</a>
+                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-secondary">More information</a>
                   <div class="api-product-page__header card__action-buttons d-flex align-self-center">
                   {{ range .APIDetails }}
                     {{ $oasfile := gt (.OASDocument.Base.Url | trim | length) 0 }}
@@ -255,7 +255,7 @@
           {{ end }}
         </div>
         <div class="col-12 text-center mt-3">
-          <a href="{{.blocks.FeaturedProductsLink.Content}}" class="btn btn-secondary-outline on-dark">{{ safe .blocks.FeaturedProductsLinkLabel.Content}}</a>
+          <a href="{{.blocks.FeaturedProductsLink.Content}}" class="btn btn-secondary on-dark">{{ safe .blocks.FeaturedProductsLinkLabel.Content}}</a>
         </div>
       </div>
     </div>

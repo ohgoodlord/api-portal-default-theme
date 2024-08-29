@@ -83,10 +83,13 @@
     --tdp-analytics-select-border: 2px solid #505071;
     --tdp-border-green: #2ca597;
     /* Buttons */
-    --tdp-primary-btn-color: #34d9c3;
+    --tdp-primary-btn-bg-color: #34d9c3;
+    --tdp-primary-btn-color: #333333;
     --tdp-primary-btn-border: 2px solid #34d9c3;
-    --tdp-secondary-btn-color: #34d9c3;
-    --tdp-secondary-btn-border: 2px solid #34d9c3;
+    --tdp-primary-btn-text: 2px solid #34d9c3;
+    --tdp-secondary-btn-bg-color: transparent;
+    --tdp-secondary-btn-color: #257da2;
+    --tdp-secondary-btn-border: 1.5px solid rgb(224, 224, 224);
     --tdp-danger-btn-color: #ff6c7d;
     --tdp-danger-btn-border: 2px solid #ff6c7d;
     --tdp-danger-outline-btn-border: 2px solid #e44766;

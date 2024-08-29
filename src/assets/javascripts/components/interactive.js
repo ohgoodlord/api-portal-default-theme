@@ -88,9 +88,9 @@ function Toggle({element, onChange, index, contentWrapper, stepsSelector, conten
       let footer = document.querySelector("footer");
       let activeTab = stepsCollection[stepIndex];
       let redoc = document.getElementById("redoc-wrapper");
-      if (activeTab && activeTab.innerHTML != "API SPECIFICATIONS") {
+      if (activeTab && activeTab.innerHTML != "API Specifications") {
         footer.style.marginTop = "0px";
-      }else if (activeTab && activeTab.innerHTML == "API SPECIFICATIONS" && redoc){
+      }else if (activeTab && activeTab.innerHTML == "API Specifications" && redoc){
         footer.style.marginTop = redoc.clientHeight + "px";
       }
     });
@@ -164,7 +164,7 @@ function initRedoc(url) {
     }, wrapper, (redoc) => {
       let footer = document.querySelector("footer");
       let activeTab = document.querySelector(".step.active.tab");
-      if (activeTab?.innerHTML == "API SPECIFICATIONS") {
+      if (activeTab?.innerHTML == "API Specifications") {
         footer.style.marginTop = wrapper.clientHeight + "px";
       }
     })
