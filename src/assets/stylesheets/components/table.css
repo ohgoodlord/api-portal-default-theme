@@ -17,7 +17,6 @@
 
 .table > thead > tr > th {
 	text-transform: uppercase;
-	font-family: "OpenSans-Bold";
 }
 
 .table td,

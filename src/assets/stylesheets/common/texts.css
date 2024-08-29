@@ -24,13 +24,4 @@ a.breadcrumb-link,
 a.breadcrumb-link:hover {
   color: var(--tdp-dark);
   text-decoration: underline;
-  font-family: 'OpenSans-Semibold';
-}
-
-.opensans-semibold {
-  font-family: 'OpenSans-Semibold';
-}
-
-.opensans-regular {
-  font-family: 'OpenSans-regular';
 }

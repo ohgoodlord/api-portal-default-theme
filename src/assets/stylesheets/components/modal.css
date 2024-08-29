@@ -10,9 +10,6 @@
   border: none;
 }
 
-.modal-title {
-  font-family: 'Smoolthan-Semibold';
-}
 .modal-body{
   padding: 50px 30px 40px 30px;
 }
@@ -39,8 +36,4 @@
   height: 15px;
   border-top-right-radius: calc(0.3rem + 15px);
   border-top-left-radius: calc(0.3rem + 15px);
-}
-
-.modal-h3 {
-  font-family: "OpenSans-Semibold";
 }

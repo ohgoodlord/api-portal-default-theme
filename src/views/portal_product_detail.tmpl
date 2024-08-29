@@ -61,7 +61,6 @@
 		    </div>
 		    <div class="api-product-page__header card__action-buttons">
 			<!--	Not displaying access button until DCR is working
-			<!--	Not displaying access button for Products with Basic Auth 	-->
 			{{if and (ne $.product.AuthType "ba") (ne $.product.AuthType "custom")}}
 				{{ if $user }}
 					<button type="button" class="btn btn-primary" id="access-button">
@@ -144,11 +143,11 @@
 				</div>
 				<div>
 				    <p class="text-regular-14 listen-path-text"> Listen path: 
-					<span class="text-open-sans-semibold">{{ $api.ListenPath }}</span></p>
+					<span class="text-brandon-semibold">{{ $api.ListenPath }}</span></p>
 				</div>
 				<div class="mt-12">
 				    {{if not (eq $api.Description "")}}
-				    <span class="m-0 text-open-sans-bold">Description:</span>
+				    <span class="m-0 text-brandon-bold">Description:</span>
 				    <p class="api-description-text text-regular-14" data-description="{{$api.Description}}">{{safe (TruncateString $api.Description 60)}}</p>
 				    {{end}}
 				</div>
@@ -179,7 +178,7 @@
                             {{$plan_id := .ID}}
                             <div class="col-xl-3 labeled-card-plan {{if and (ge $index 0) (lt $index $lastPlan)}}mr-4{{end}} mb-3">
 				<div class="mt-43">
-                                    <h2 class=".text-open-sans-bold-20 dark">{{$plan.PlanName}}</h2>
+                                    <h2 class=".text-brandon-bold-20 dark">{{$plan.PlanName}}</h2>
 				</div>
 				<div class="mt-3 rate-limit-and-quota">
                                     <p class="text-regular-14 m-0">Quota: {{ $plan.FormatQuota }}</p>

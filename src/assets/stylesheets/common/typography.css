@@ -1,18 +1,22 @@
 /* Font family */
 
+body {
+	font-family: "BrandonText", Arial, Helvetica, sans-serif;
+}
+
 h1,
 h2 {
-	font-family: "OpenSans-Bold";
+	font-family: 'BrandonText', 'Lato', sans-serif;
 }
 
 h3,
 h4,
 h5 {
-	font-family: "OpenSans-Bold";
+	font-family: 'BrandonText', 'Lato', sans-serif;
 }
 
 strong {
-	font-family: "OpenSans-Bold";
+	font-family: 'BrandonText', 'Lato', sans-serif;
 }
 
 /* Font sizes */
@@ -44,23 +48,22 @@ h6 {
 
 body,
 p {
-	font-family: "OpenSans-Regular";
+	font-family: 'BrandonText', 'Lato', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 }
-.text-open-sans-regular {
-	font-family: "OpenSans-Regular";
+.text-brandon-regular {
+	font-family: 'BrandonText', 'Lato', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 }
-.text-open-sans-semibold{
-	font-family: "OpenSans-Semibold";
+.text-brandon-semibold{
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 }
-
-.text-open-sans-bold{
-	font-family: "OpenSans-Bold";
+.text-brandon-bold{
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 }
@@ -70,25 +73,25 @@ p {
 }
 
 .title-bold {
-	font-family: 'Smoolthan-Bold';
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 20px;
 	line-height: 24px;
 }
 
 .title-h1-bold {
-	font-family: 'Smoolthan-Bold';
+	font-family: 'BrandonText', 'Lato', sans-serif;
 	font-size: 25px;
 	line-height: 30px;
 }
 
 .title-h2-bold {
-    font-family: 'Smoolthan-Bold';
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
     font-size: 22px;
     line-height: 30px;
 }
 
 .text-regular-14 {
-    font-family: "OpenSans-Regular";
+	font-family: 'BrandonText', 'Lato', sans-serif;
     font-size: 14px;
     line-height: 19px;
 }
@@ -102,7 +105,7 @@ p {
 	color: var(--tdp-secondary);
 }
 .text-regular-12 {
-	font-family: "OpenSans-Regular";
+	font-family: 'BrandonText', 'Lato', sans-serif;
 	font-size: 12px;
 	line-height: 16px;
 }
@@ -110,7 +113,7 @@ p {
 	color: var(--tdb-text-color-gray-lighter);
 }
 .text-os-semibold-16{
-	font-family: "OpenSans-Semibold";
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 }
@@ -118,7 +121,7 @@ p {
 	color: var(--tdp-extra-dark);
 }
 .text-os-bold-17{
-	font-family: "OpenSans-Bold";
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 17px;
 	line-height: 23px;
 }
@@ -127,12 +130,12 @@ p {
 	cursor: pointer;
 }
 .text-os-semibold-12{
-	font-family: "OpenSans-Semibold";
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 12px;
 	line-height: 16px;
 }
-.text-open-sans-bold-20{
-	font-family: "OpenSans-Bold";
+.text-brandon-bold-20{
+	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
 	font-size: 20px;
 	line-height: 27.24px;
 }

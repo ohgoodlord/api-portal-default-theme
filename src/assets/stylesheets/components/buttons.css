@@ -7,7 +7,6 @@
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
-	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.2s linear;
 	user-select: none;
@@ -17,7 +16,6 @@
 	font-size: 14px;
 	line-height: 19px;
 	border-radius: var(--tdp-border-radius);
-	font-family: "OpenSans-Bold";
 }
 
 .btn.focus,
@@ -230,5 +228,4 @@
 .access-btn-link {
 	text-decoration: none !important;
 	color: white !important;
-	font-family: "OpenSans-Bold" !important;
 }
