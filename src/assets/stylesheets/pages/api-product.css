@@ -218,9 +218,9 @@
 
 .download-oas-button {
   border-radius: 100px;
-  border: 2px solid var(--tdp-secondary);
-  background: var(--tdp-secondary);
-  color: var(--tdp-body-bg-color);
+  border: 2px solid var(--tdp-primary);
+  background: var(--tdp-primary);
+  color: var(--tdp-primary-btn-color);
   font-weight: bolder;
   padding: 10px 25px;
   font-size: 16px;
