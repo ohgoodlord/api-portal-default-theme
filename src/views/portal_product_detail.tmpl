@@ -141,14 +141,9 @@
 				<div class="labeled-card__title mb-4">
 				    <h3 class="mb-0">{{ $api.Name }}</h3>
 				</div>
-				<div>
-				    <p class="text-regular-14 listen-path-text"> Listen path: 
-					<span class="text-brandon-semibold">{{ $api.ListenPath }}</span></p>
-				</div>
 				<div class="mt-12">
 				    {{if not (eq $api.Description "")}}
-				    <span class="m-0 text-brandon-bold">Description:</span>
-				    <p class="api-description-text text-regular-14" data-description="{{$api.Description}}">{{safe (TruncateString $api.Description 60)}}</p>
+				    <p class="api-description-text text-regular-14" data-description="{{$api.Description}}">{{safe (TruncateString $api.Description 120)}}</p>
 				    {{end}}
 				</div>
 			    </div>
@@ -276,7 +271,7 @@
 									{{end}}
 								</div>
 								<div class="mt-4 keep-reading">
-									<a href="{{.URL}}" class="btn keep-reading-btn">KEEP READING</a>
+									<a href="{{.URL}}" class="btn keep-reading-btn">Read</a>
 								</div>
 							</div>
 						{{end}}

@@ -121,6 +121,7 @@
 }
 
 .labeled-card {
+  background: var(--tdp-light-gray);
   border: var(--tdp-light-border);
   border-radius: 10px;
   min-width: 274px;
@@ -128,10 +129,6 @@
   max-width: 274px;
   max-height: 166px;
   cursor: pointer;
-}
-.labeled-card:hover {
-  background: var(--tdp-light-gray);
-  border: 1px solid var(--tdp-secondary);
 }
 
 .labeled-card-plan {
@@ -161,10 +158,10 @@
 }
 
 .labeled-card__title {
-  background-color: var(--tdp-primary-dark);
-  color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background-color: var(--tdp-primary);
+  color: var(--tdp-primary-btn-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: center;
   align-self: center;
   padding: 7px 17px;
