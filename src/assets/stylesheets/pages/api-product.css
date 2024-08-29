@@ -6,7 +6,6 @@
 
 .api-product-page-wrapper a:not(.btn) {
   color: var(--tdp-text-color);
-  font-family: 'OpenSans-Semibold';
 }
 
 .api-product-page__info-description a {
@@ -81,9 +80,8 @@
 
 .more-info-text p {
   margin: 0%;
-  font-family: "OpenSans-Regular";
-	font-size: 14px;
-	line-height: 19px;
+  font-size: 14px;
+  line-height: 19px;
   color: var(--tdp-dark);
   max-width: 823px;
   align-self: center;
@@ -158,7 +156,6 @@
 }
 
 .labeled-card__title h3 {
-  font-family: "OpenSans-Bold";
   font-size: 18px;
   line-height: 24.51px;
 }
@@ -200,7 +197,6 @@
   margin-right: 10px;
   font-size: 14px;
   font-weight: 900;
-  font-family: 'OpenSans-Bold';
 }
 
 .tabs-wrapper .tab:hover{
@@ -216,7 +212,6 @@
   border-radius: 100px;
   padding: 10px 25px;
   color: var(--tdp-nav-link-color);
-  font-family: "OpenSans-Bold";
   font-size: 14px;
   line-height: 19px;
 }
@@ -306,7 +301,6 @@
 
 .step-wrapper-api-docs .step.active{
   border-bottom: 1px solid var(--tdp-dark);
-  font-family: "OpenSans-Bold";
   width: fit-content;
 }
 .content-wrapper__content-api-docs{
@@ -322,15 +316,13 @@
   color: var(--tbd-text-colot-gray-mid);
 }
 .api-docs-text strong {
-  font-family: "OpenSans-Semibold";
   font-size: 17px;
   line-height: 23px;
 }
 
 .api-docs-text p {
-  font-family: "OpenSans-Regular";
-	font-size: 14px;
-	line-height: 19px;
+  font-size: 14px;
+  line-height: 19px;
   margin-top: 35px;
 }
 
@@ -368,7 +360,6 @@
     border-radius: 100px;
     padding: 10px 25px;
     color: var(--tdp-nav-link-color);
-    font-family: "OpenSans-Bold";
     font-size: 14px;
     line-height: 19px;
 }
@@ -437,13 +428,12 @@
 
 .product-doc-menu-active {
   text-decoration: underline!important;
-  font-family: 'OpenSans-Semibold'!important;
 }
 
 .product-doc-menu {
   color: var(--tdp-text-color);
-  font-family: 'OpenSans-Regular'!important;
 }
+
 #redoc-wrapper{
   position: absolute;
   width: 100%;

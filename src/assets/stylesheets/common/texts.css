@@ -24,21 +24,4 @@ a.breadcrumb-link,
 a.breadcrumb-link:hover {
   color: var(--tdp-dark);
   text-decoration: underline;
-  font-family: 'OpenSans-Semibold';
-}
-
-a.brand-link,
-a.beand-link:hover {
-  color: var(--link-default);
-  font-family: Inter-Medium, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.opensans-semibold {
-  font-family: 'OpenSans-Semibold';
-}
-
-.opensans-regular {
-  font-family: 'OpenSans-regular';
 }
