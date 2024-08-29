@@ -10,6 +10,11 @@
   right: 5px;
 }
 
+
+.blog-page-wrapper > h3{
+  padding-block: 8rem;
+}
+
 .card.blog {
   padding: 0;
 }
