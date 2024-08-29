@@ -188,7 +188,7 @@
   <!-- Featured APIs -->
     {{ $featured_products := FeaturedProducts }}
     {{ if $featured_products }}
-    <div class="row dark-to-light-bg p-5 featured-apis-wrapper">
+    <div class="row p-5 featured-apis-wrapper">
       <div class="col-12 text-center text-white mb-5">
         <h2>{{ safe .blocks.FeaturedProductsTitle.Content}}</h2>
         <p>
@@ -262,7 +262,7 @@
     {{ else }}
       {{if $user }}
         {{ if eq $user.Role "provider-admin"}}
-          <div class="row dark-to-light-bg p-5">
+          <div class="row p-5">
             <div class="col-md-12 text-center text-white">
               <h4>There are no featured API products yet</h4>
               <p>Create a product or mark one as featured</p>
@@ -274,7 +274,7 @@
   <!-- end of Featured APIs -->
 
   <!-- Partners -->
-  <div class="row light-to-dark-bg p-5 partners-wrapper">
+  <div class="row p-5 partners-wrapper">
     <div class="col-12 text-center text-white mb-5">
       <h2>{{ safe .blocks.PartnersTitle.Content}}</h2>
       <p>
