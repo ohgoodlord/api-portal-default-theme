@@ -219,7 +219,7 @@
                   <p class="card-text">{{ .Description }}</p>
                 </div>
                 <div class="home-card-cta d-flex flex-row align-self-center justify-content-between w-100">
-                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-secondary">More information</a>
+                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-primary">Getting Started</a>
                   <div class="api-product-page__header card__action-buttons d-flex align-self-center">
                   {{ range .APIDetails }}
                     {{ $oasfile := gt (.OASDocument.Base.Url | trim | length) 0 }}
