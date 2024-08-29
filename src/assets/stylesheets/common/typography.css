@@ -24,26 +24,32 @@ strong {
 h1 {
 	font-size: 25px;
 	line-height: 30px;
+	font-weight: 900; /* Extra bold */
 }
 h2 {
 	font-size: 20px;
 	line-height: 24px;
+	font-weight: 700; /* Bold */
 }
 h3 {
 	font-size: 17px;
 	line-height: 23px;
+	font-weight: 600; /* Semi-bold */
 }
 h4 {
 	font-size: 16px;
 	line-height: 22px;
+	font-weight: 500; /* Medium */
 }
 h5 {
 	font-size: 15px;
 	line-height: 19px;
+	font-weight: 400; /* Normal */
 }
 h6 {
 	font-size: 14px;
 	line-height: 19px;
+	font-weight: 400; /* Normal */
 }
 
 body,
@@ -58,12 +64,14 @@ p {
 	line-height: 22px;
 }
 .text-brandon-semibold{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 14px;
 	line-height: 19px;
 }
 .text-brandon-bold{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 14px;
 	line-height: 19px;
 }
@@ -73,7 +81,8 @@ p {
 }
 
 .title-bold {
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	line-height: 24px;
 }
@@ -85,7 +94,8 @@ p {
 }
 
 .title-h2-bold {
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
     font-size: 22px;
     line-height: 30px;
 }
@@ -113,7 +123,8 @@ p {
 	color: var(--tdb-text-color-gray-lighter);
 }
 .text-os-semibold-16{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 16px;
 	line-height: 22px;
 }
@@ -121,7 +132,8 @@ p {
 	color: var(--tdp-extra-dark);
 }
 .text-os-bold-17{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 17px;
 	line-height: 23px;
 }
@@ -130,12 +142,14 @@ p {
 	cursor: pointer;
 }
 .text-os-semibold-12{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 12px;
 	line-height: 16px;
 }
 .text-brandon-bold-20{
-	font-family: 'BrandonText-Bold', 'Lato', sans-serif;
+	font-family: 'BrandonText', 'Lato', sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	line-height: 27.24px;
 }
