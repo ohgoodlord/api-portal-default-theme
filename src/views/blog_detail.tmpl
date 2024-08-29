@@ -2,8 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <p> {{ .post.CreatedAt | date "2 Jan, 2006" }} - <!-- /* Commented until it gets implemented */ {{ .Author }} --> </p>
+        <p> {{ .post.CreatedAt | date "2 Jan, 2006" }} <!-- /* Commented until it gets implemented */ {{ .Author }} --> </p>
         <h1>{{.post.Title}}</h1>
+        <hr>
         <p class="lead">
           {{.post.Lede}}
         </p>
@@ -11,7 +12,6 @@
         {{ if .post.HeaderImage.URL }}
           <img class="card-image-border-card-view mt-4 w-100" src='{{ .post.HeaderImage.URL }}'/>
         {{ else }}
-          <hr>
         {{ end }}
         <!-- Post Content -->
         {{if .post.MarkdownEnabled}}
@@ -23,7 +23,6 @@
             {{ safe .post.Content }}
           </div>
         {{end}}
-        <hr>
       </div>
     </div>
 
@@ -53,7 +52,7 @@
                     </span>
                   </p>
                   <div class="card-cta align-self-center">
-                    <a href="{{$val.URL}}" class="btn {{ if eq $val.HeaderImage.URL "" }}on-dark{{ end }} btn-secondary">keep reading</a>
+                    <a href="{{$val.URL}}" class="btn {{ if eq $val.HeaderImage.URL "" }}on-dark{{ end }} btn-secondary">Read</a>
                   </div>
                 </div>
               </div>

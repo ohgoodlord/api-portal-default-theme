@@ -66,7 +66,8 @@
     --tdp-login-form: #F0F0F3D9;
     /* Text colors */
     --tdp-text-color: #2c3030;
-    --tdp-link-color: #34d9c3;
+    --tdp-link-color: rgb(37, 125, 162);
+    --tdp-link-hover-color: rgb(12, 72, 97);
     --tdp-nav-link-color: white;
     --tbd-text-color-dark: #1a1a1a;
     --tdp-text-color-extra-dark: #03031C;

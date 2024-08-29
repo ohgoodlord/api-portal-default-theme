@@ -16,8 +16,7 @@ a {
 }
 
 a:hover {
-  color: var(--tdp-primary);
-  text-decoration: underline;
+  color: var(--tdp-link-hover-color);
 }
 
 a.breadcrumb-link,
