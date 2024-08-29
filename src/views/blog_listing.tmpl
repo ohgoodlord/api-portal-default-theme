@@ -6,7 +6,7 @@
         <div class="col-sm-6">
           <div class="text-container">
             <h1>{{.blogSite.Title}}</h1>
-            <p>{{.blogSite.Lede}}</p>
+            <p class="mt-4">{{.blogSite.Lede}}</p>
           </div>
         </div>
         <div class="col-sm-6 image-container" style="background: url('/assets/images/blog.svg') no-repeat left center;">
@@ -76,8 +76,9 @@
                   <div class="card-body text-center d-flex flex-column align-content-center justify-content-center p-4">
                     <p> {{.CreatedAt | date "2 Jan, 2006" }} {{/*  <!-- Commented until it gets implemented -->  {{ .Author }} */}}  </p>
                     <h2 class="card-title d-flex flex-column justify-content-end mt-3">{{ $val.Title }}</h2>
-                    <p>
-                      {{ $val.Lede }}</p>
+                    <p class="mt-3">
+                      {{ $val.Lede }}
+                    </p>
                   </div>
                   <p class="card-text blog__category align-self-center">
                     <span>
