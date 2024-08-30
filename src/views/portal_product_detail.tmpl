@@ -314,7 +314,7 @@
               <div class="content-wrapper-api-docs ml-110">
                   {{range $index,$doc := $thisProduct.Docs}}
                     <div class="content-wrapper__content-api-docs {{if eq $index 0}}d-block{{else}}d-none{{end}}">
-                      <h3 class="text-os-bold-17 dark mb-50">{{$doc.Title}}</h3>
+                      <h2 class="text-os-bold-17 dark mb-4">{{$doc.Title}}</h2>
                         {{if and $doc.MarkdownEnabled (gt (len $doc.MarkdownContent) 0)}}
                           <div id="set-markdown-content-{{$index}}" class="api-docs-text">
                               {{safe_md $doc.MarkdownContent}}
