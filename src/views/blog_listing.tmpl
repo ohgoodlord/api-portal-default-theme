@@ -74,11 +74,11 @@
                     <img class="card-image-border-card-view" src='{{$val.HeaderImage.URL "preview"}}'/>
                   {{ end }}
                   <div class="card-body text-center d-flex flex-column align-content-center justify-content-center p-4">
-                    <p> {{.CreatedAt | date "2 Jan, 2006" }} {{/*  <!-- Commented until it gets implemented -->  {{ .Author }} */}}  </p>
                     <h2 class="card-title d-flex flex-column justify-content-end mt-3">{{ $val.Title }}</h2>
                     <p class="mt-3">
                       {{ $val.Lede }}
                     </p>
+                    <p class="gray small"> {{.CreatedAt | date "2 Jan, 2006" }} {{/*  <!-- Commented until it gets implemented -->  {{ .Author }} */}}  </p>
                   </div>
                   <p class="card-text blog__category align-self-center">
                     <span>

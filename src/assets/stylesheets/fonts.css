@@ -1,3 +1,8 @@
+@import "../fonts/BrandonText-Bold.woff";
+@import "../fonts/BrandonText-Bold.woff2";
+@import "../fonts/BrandonText-Regular.woff";
+@import "../fonts/BrandonText-Regular.woff2";
+
 @font-face {
   font-family: 'BrandonText';
   src: url('../fonts/BrandonText-Regular.woff2') format('woff2'),
