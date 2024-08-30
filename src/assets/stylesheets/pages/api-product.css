@@ -6,6 +6,7 @@
 
 .api-product-page-wrapper a:not(.btn) {
     color: var(--tdp-text-color);
+    text-decoration: underline;
 }
 
 .api-product-page__info-description a {
