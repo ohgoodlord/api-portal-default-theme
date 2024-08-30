@@ -88,11 +88,11 @@ Interactive({
 	contentSelector: '.content-wrapper__content-api-docs'
 });
 
-HandleApiSpecSelect({
-	selectorId: "OasApiSelect",
-	downloadSelectorId: "display-download-button",
-	displaySelectorId: "oas-display-stoplight"
-})
+// HandleApiSpecSelect({
+// 	selectorId: "OasApiSelect",
+// 	downloadSelectorId: "display-download-button",
+// 	displaySelectorId: "oas-display-stoplight"
+// })
 /* Interactive */
 SelectMultiple({
 	selector: '.analytics-select-many-apps',

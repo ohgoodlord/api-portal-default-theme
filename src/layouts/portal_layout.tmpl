@@ -23,17 +23,17 @@
     {{end}}
     <!-- End Google Tag Manager -->
     <!-- stoplight.io -->    
-    <script>
-      function loadFallbackScript(src) {
-        let script = document.createElement('script');
-        script.src = src;
-        script.async = true;
-        document.head.appendChild(script);
-      }
-    </script>
-    <script src="https://unpkg.com/@stoplight/elements/web-components.min.js" onerror="loadFallbackScript('/assets/vendor/stoplight/elements/web-components.min.js')" async></script>
-    <link rel="preload" href="https://unpkg.com/@stoplight/elements/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.onerror=null;this.href='/assets/vendor/stoplight/elements/styles.min.css'">
-    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
+{{/*    <script>*/}}
+{{/*      function loadFallbackScript(src) {*/}}
+{{/*        let script = document.createElement('script');*/}}
+{{/*        script.src = src;*/}}
+{{/*        script.async = true;*/}}
+{{/*        document.head.appendChild(script);*/}}
+{{/*      }*/}}
+{{/*    </script>*/}}
+{{/*    <script src="https://unpkg.com/@stoplight/elements/web-components.min.js" onerror="loadFallbackScript('/assets/vendor/stoplight/elements/web-components.min.js')" async></script>*/}}
+{{/*    <link rel="preload" href="https://unpkg.com/@stoplight/elements/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.onerror=null;this.href='/assets/vendor/stoplight/elements/styles.min.css'">*/}}
+{{/*    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>*/}}
     <!-- Load style assets -->
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -48,6 +48,11 @@
         }
       });
     </script>
+
+    <!-- Load SwaggerUI -->
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js" crossorigin></script>
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.js"></script>
 </head>
 
   <body>
