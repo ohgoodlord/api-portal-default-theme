@@ -6,6 +6,7 @@
 
 .card {
   border-radius: var(--tdp-card-border-radius);
+  background-color: white;
   color: var(--tdp-text-color);
 }
 
@@ -106,8 +107,8 @@
 /* Blog cards  */
 
 .card.dark-background {
-  background-color: var(--tdp-secondary-dark);
-  color: white;
+  background-color: white;
+  color: var(--tdp-text-color);
 }
 
 .card.blog .card-cta {

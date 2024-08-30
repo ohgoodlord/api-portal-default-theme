@@ -1,5 +1,5 @@
 .page-wrapper .blog-page-wrapper {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 .blog-page-wrapper .text-container {
@@ -8,6 +8,11 @@
 
 .blog-page-wrapper .search-container .input-group-append {
   right: 5px;
+}
+
+
+.blog-page-wrapper > h3{
+  padding-block: 8rem;
 }
 
 .card.blog {
@@ -22,7 +27,6 @@
   border: none;
   color: var(--tdp-secondary);
   font-size: 24px;
-  font-family: 'Smoolthan-Bold';
   padding-top: 2px;
   padding-bottom: 0;
   padding-inline: 10px;
@@ -41,4 +45,9 @@
   position: absolute;
   top: -1px;
   left: 10px;
+}
+
+.blog-detail-page-wrapper >  .container > .row > .col-lg-12 {
+  background-color: white;
+  border-radius: var(--tdp-card-border-radius);
 }

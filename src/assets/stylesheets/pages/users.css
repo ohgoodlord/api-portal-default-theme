@@ -1,5 +1,4 @@
 .users-main-title{
-    font-family: 'Smoolthan-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -7,7 +6,6 @@
 }
 
 .users-secondary-title{
-    font-family: 'Smoolthan-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -34,7 +32,6 @@
 }
 
 .first-user-title{
-    font-family: Smoolthan-Regular;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -47,13 +44,12 @@
 }
 
 .learn-text{
-    osition: absolute;
+    position: absolute;
     left: 1031px;
     right: 799px;
     top: 409px;
     bottom: 936px;
 
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;

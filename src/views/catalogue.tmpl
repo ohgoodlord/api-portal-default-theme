@@ -35,9 +35,10 @@
           </select>
         </div>
         <div class="pr-2">
-          <button type="submit" class="btn btn-secondary-outline">Search</button>
+          <button type="submit" class="btn btn-secondary">Search</button>
         </div>
       </div>
+      <!--
       <div class="sorting-container d-flex flex-row justify-content-end pt-3">
           <button id="view-as-list" type="button">
               <svg id="list-svg" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,6 +53,7 @@
             <span>Grid</span>
           </button>
       </div>
+      -->
     </form>
     <div class="col-12 catalog-apis-container">
       <div class="row">
@@ -85,11 +87,11 @@
               </div>
               <div class="card-cta d-flex flex-column align-self-center justify-content-between align-items-baseline w-100">
                 <div>
-                  <a href="/portal/catalogue-products/{{ $productPath }}" class="btn btn-secondary">more info</a>
+                  <a href="/portal/catalogue-products/{{ $productPath }}" class="btn btn-primary">Getting started</a>
                 </div>
                 {{if $hasDocs}}
                   <div class="dropdown mt-2">
-                    <button class="btn btn-secondary-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Docs
                     </button>
                     <div class="view-docs-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton">

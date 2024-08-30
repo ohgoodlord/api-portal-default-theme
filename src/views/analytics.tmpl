@@ -19,19 +19,19 @@
     <div class="d-flex flex-row justify-content-end">
       <div id="analytics-date-picker" class="date-picker d-flex flex-row justify-content-around">
         <i class="bi bi-calendar-minus calendar-icon"></i>
-        <p id="analytics-date-picker-selected-range" class="text-open-sans-semibold dark">This week</p>
+        <p id="analytics-date-picker-selected-range" class="text-brandon-semibold dark">This week</p>
       </div>
     </div>
     <div class="dashboard-tabs-wrapper step-wrapper d-flex d-row mt-14">
       <div class="step active analytics-tab mr-10">
         <div class="tab-text">
-          <p class="m-0 text-open-sans-semibold gray">Perfomance</p>
+          <p class="m-0 text-brandon-semibold gray">Perfomance</p>
           <h1 class="m-0 title-h1-bold dark">Overview</h1>
         </div>
       </div>
       <div id="traffic-chart-tab" class="step analytics-tab mr-14">
         <div class="tab-text">
-          <p class="m-0 text-open-sans-semibold gray">Total API Calls</p>
+          <p class="m-0 text-brandon-semibold gray">Total API Calls</p>
           <h1 id="total-api-calls" class="m-0 title-h1-bold dark"></h1>
           <div id="traffic-vs-last-week" class="d-flex flex-row align-items-end mt-1">
             <span id="traffic-vs-last-week-dafault" class="text-regular-14 gray-lighter d-none">-</span>
@@ -41,7 +41,7 @@
       </div>
       <div id="error-rate-chart-tab" class="step analytics-tab mr-10">
         <div class="tab-text">
-          <p class="m-0 text-open-sans-semibold gray">Error rate (average)</p>
+          <p class="m-0 text-brandon-semibold gray">Error rate (average)</p>
           <h1 id="error-rate-average" class="m-0 title-h1-bold dark"></h1>
           <div id="error-rate-vs-last-week" class="d-flex flex-row align-items-end mt-1">
             <span id="error-rate-vs-last-week-dafault" class="text-regular-14 gray-lighter d-none">-</span>
@@ -51,7 +51,7 @@
       </div>
       <div id="latency-chart-tab" class="step analytics-tab">
         <div class="tab-text">
-          <p class="m-0 text-open-sans-semibold gray">Latency (average)</p>
+          <p class="m-0 text-brandon-semibold gray">Latency (average)</p>
           <h1 id="latency-average" class="m-0 title-h1-bold dark"></h1>
           <div id="latency-vs-last-week" class="d-flex flex-row align-items-end mt-1">
             <span id="latency-vs-last-week-dafault" class="text-regular-14 gray-lighter d-none">-</span>
@@ -66,15 +66,15 @@
           <div class="api-calls-wrapper flex-column d-flex">
             <div class="d-flex flex-row">
               <div class="top-row-content ml-27">
-                <p class="m-0 text-open-sans-semibold gray">Total API Calls</p>
+                <p class="m-0 text-brandon-semibold gray">Total API Calls</p>
                 <h1 id="usageTabTotalAPICalls" class="m-0 title-h1-bold dark">0</h1>
               </div>
               <div class="top-row-content">
-                <p class="m-0 text-open-sans-semibold gray">Success</p>
+                <p class="m-0 text-brandon-semibold gray">Success</p>
                 <h1 id="usageTabSuccess" class="m-0 title-h1-bold dark">0</h1>
               </div>
               <div class="top-row-content">
-                <p class="m-0 text-open-sans-semibold gray">Errors</p>
+                <p class="m-0 text-brandon-semibold gray">Errors</p>
                 <h1 id="usageTabErrors" class="m-0 title-h1-bold dark">0</h1>
               </div>
               <select id="analytics-overview-select-apps" class="analytics-select-overview">
@@ -91,7 +91,7 @@
               <canvas id="hits-vs-errors-chart" class="d-flex flex-row" style="margin: 20px 20px auto; max-height: 350px;"> </canvas>
             </div>
             <div id="hits-vs-errors-chart-csv" class="d-flex flex-row-reverse mt-20 mr-20 export-wrapper">
-              <span class="text-open-sans-bold export">EXPORT TO CSV</span>
+              <span class="text-brandon-bold export">EXPORT TO CSV</span>
               <i class="bi bi-download download-icon"></i>
             </div>
           </div>
@@ -107,7 +107,7 @@
               </div>
               <div id="error-rates-chart-csv" class="d-flex flex-row ml-315 mt-20 export-wrapper">
                 <i class="bi bi-download download-icon"></i>
-                <span class="text-open-sans-bold export">EXPORT TO CSV</span>
+                <span class="text-brandon-bold export">EXPORT TO CSV</span>
               </div>
             </div>
             <div class="errors-graph-wrapper">
@@ -121,7 +121,7 @@
               </div>
               <div id="error-breakdown-chart-csv" class="d-flex flex-row ml-315 mt-20 export-wrapper">
                 <i class="bi bi-download download-icon"></i>
-                <span class="text-open-sans-bold export">EXPORT TO CSV</span>
+                <span class="text-brandon-bold export">EXPORT TO CSV</span>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
                       <i class="bi bi-x x-icon"></i>
                       </div>
                   </div>
-                  <p class="text-open-sans-semibold dark mb-1">Apps</p>
+                  <p class="text-brandon-semibold dark mb-1">Apps</p>
                   <select class="analytics-select-many analytics-select-many-apps">
                       <option selected value="All apps">
                       All apps
@@ -153,7 +153,7 @@
                 </div>
                 <div class="d-flex flex-column w-465">
                   <div class="d-flex flex-row align-items-center">
-                    <p class="text-open-sans-semibold dark mb-1">Response codes</p>
+                    <p class="text-brandon-semibold dark mb-1">Response codes</p>
                       <span class="help-icon ml-1" data-bs-toggle="tooltip" title="Type in a response code and press 'Enter' to apply the filter. You can filter by multiple response codes at the same time">
                         <img src="/assets/images/help.svg" tabindex="0">
                       </span>
@@ -168,27 +168,27 @@
           <div class="total-api-calls-wrapper">
             <div class="d-flex flex-row mt-29 ml-27 align-items-end">
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Statistics</p>
+                <p class="text-brandon-semibold dark mb-1">Statistics</p>
                 <select class="analytics-select-2">
                   <option value="Total API Calls" selected>Total API Calls</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Time units</p>
+                <p class="text-brandon-semibold dark mb-1">Time units</p>
                 <select id="traffic-time-unit" class="analytics-select-2">
                   <option value="day" selected>Daily</option>
                   <option value="hour">Hourly</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Split by</p>
+                <p class="text-brandon-semibold dark mb-1">Split by</p>
                 <select class="analytics-select-2">
                   <option value="APIs" selected>APIs</option>
                 </select>
               </div>
               <div id="traffic-chart-csv" class="d-flex flex-row ml-140 mb-2 export-wrapper">
                 <i class="bi bi-download download-icon"></i>
-                <span class="text-open-sans-bold export">EXPORT API CALLS TO CSV</span>
+                <span class="text-brandon-bold export">EXPORT API CALLS TO CSV</span>
               </div>
             </div>
             <div class="m-4 mt-5">
@@ -209,7 +209,7 @@
                       <i class="bi bi-x x-icon"></i>
                       </div>
                   </div>
-                  <p class="text-open-sans-semibold dark mb-1">Apps</p>
+                  <p class="text-brandon-semibold dark mb-1">Apps</p>
                   <select class="analytics-select-many-apps analytics-select-many">
                       <option selected value="All apps">
                       All apps
@@ -223,7 +223,7 @@
                 </div>
                 <div class="d-flex flex-column w-465">
                   <div class="d-flex flex-row align-items-center">
-                    <p class="text-open-sans-semibold dark mb-1">Response codes</p>
+                    <p class="text-brandon-semibold dark mb-1">Response codes</p>
                       <span class="help-icon ml-1" data-bs-toggle="tooltip" title="Type in a response code and press 'Enter' to apply the filter. You can filter by multiple response codes at the same time">
                         <img src="/assets/images/help.svg" tabindex="0">
                       </span>
@@ -238,28 +238,28 @@
           <div class="total-api-calls-wrapper">
             <div class="d-flex flex-row mt-29 ml-27 align-items-end">
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Statistics</p>
+                <p class="text-brandon-semibold dark mb-1">Statistics</p>
                 <select id="error-rate-statistics" class="analytics-select-2">
                   <option value="error-rate" selected>Error rate</option>
                   <option value="total-errors">Total errors</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Time units</p>
+                <p class="text-brandon-semibold dark mb-1">Time units</p>
                 <select id="error-rate-time-unit" class="analytics-select-2">
                   <option value="hour" selected>Hourly</option>
                   <option value="day">Daily</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Split by</p>
+                <p class="text-brandon-semibold dark mb-1">Split by</p>
                 <select class="analytics-select-2">
                   <option value="APIs" selected>APIs</option>
                 </select>
               </div>
               <div id="error-rate-chart-csv" class="d-flex flex-row ml-140 mb-2 export-wrapper">
                 <i class="bi bi-download download-icon"></i>
-                <span class="text-open-sans-bold export">EXPORT ERRORS TO CSV</span>
+                <span class="text-brandon-bold export">EXPORT ERRORS TO CSV</span>
               </div>
             </div>
             <div class="m-4 mt-5">
@@ -280,7 +280,7 @@
                     <i class="bi bi-x x-icon"></i>
                     </div>
                 </div>
-                <p class="text-open-sans-semibold dark mb-1">Apps</p>
+                <p class="text-brandon-semibold dark mb-1">Apps</p>
                 <select class="analytics-select-many-apps analytics-select-many apps-latency">
                     <option selected value="All apps">
                     All apps
@@ -297,27 +297,27 @@
           <div class="total-api-calls-wrapper">
             <div class="d-flex flex-row mt-29 ml-27 align-items-end">
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Statistics</p>
+                <p class="text-brandon-semibold dark mb-1">Statistics</p>
                 <select class="analytics-select-2">
                   <option selected value="Average latency">Average latency</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Time units</p>
+                <p class="text-brandon-semibold dark mb-1">Time units</p>
                 <select id="latency-time-unit" class="analytics-select-2">
                   <option value="hour" selected>Hourly</option>
                   <option value="day">Daily</option>
                 </select>
               </div>
               <div class="d-flex flex-column w-185">
-                <p class="text-open-sans-semibold dark mb-1">Split by</p>
+                <p class="text-brandon-semibold dark mb-1">Split by</p>
                 <select class="analytics-select-2">
                   <option value="APIs" selected>APIs</option>
                 </select>
               </div>
               <div id="latency-chart-csv" class="d-flex flex-row ml-140 mb-2 export-wrapper">
                 <i class="bi bi-download download-icon"></i>
-                <span class="text-open-sans-bold export">EXPORT LATENCY TO CSV</span>
+                <span class="text-brandon-bold export">EXPORT LATENCY TO CSV</span>
               </div>
             </div>
             <div class="m-4 mt-5">

@@ -3,7 +3,7 @@
 {{ $user := CurrentUser req }}
 
 <div class="home-page-wrapper">
-  <header class="dark-to-light-bg">
+  <header>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -19,7 +19,7 @@
             <a href="{{.blocks.HeaderButtonLink.Content}}" class="btn btn-primary">{{ safe .blocks.HeaderButtonLabel.Content}}</a>
           </div>
         </div>
-        <div class="col-sm-6 image-container" style="background: url('/assets/images/tyk-portal-silhouette.png') no-repeat left center;">
+        <div class="col-sm-6 image-container" style="background: url('/assets/images/goodlord-logo-colour.png') no-repeat left center;">
           {{.blocks.BackgroundImage.Image.URL}}</div>
       </div>
     </div>
@@ -74,7 +74,7 @@
   {{end}}
 
   {{ if .blocks.FlipFlopRightImageTitle1.Content }}
-    <div class="dark-to-light-bg">
+    <div>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-sm-6">
@@ -165,7 +165,7 @@
   {{ if .blocks.FlipFlopLeftImageTitle1.Content }}
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 image-container" style="background: url('/assets/images/about-us.png') no-repeat right center;">{{.blocks.FlipFlopLeftImage1.Image.URL}}</div>
+        <div class="col-sm-6 image-container" style="background: url('/assets/images/goodlord-logo-colour.png') no-repeat right center;">{{.blocks.FlipFlopLeftImage1.Image.URL}}</div>
         <div class="col-sm-6">
           <div class="row align-items-center my-5">
             <div class="text-container w-100 text-left">
@@ -177,7 +177,7 @@
                   {{ safe .blocks.FlipFlopLeftImageDescription1.Content}}
                 {{end}}
               </p>
-              <a href="{{.blocks.FlipFlopLeftImageButtonLink1.Content}}" class="btn btn-secondary-outline">{{ safe .blocks.FlipFlopLeftImageButtonLabel1.Content}}</a>
+              <a href="{{.blocks.FlipFlopLeftImageButtonLink1.Content}}" class="btn btn-secondary">{{ safe .blocks.FlipFlopLeftImageButtonLabel1.Content}}</a>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@
   <!-- Featured APIs -->
     {{ $featured_products := FeaturedProducts }}
     {{ if $featured_products }}
-    <div class="row dark-to-light-bg p-5 featured-apis-wrapper">
+    <div class="row p-5 featured-apis-wrapper">
       <div class="col-12 text-center text-white mb-5">
         <h2>{{ safe .blocks.FeaturedProductsTitle.Content}}</h2>
         <p>
@@ -219,7 +219,7 @@
                   <p class="card-text">{{ .Description }}</p>
                 </div>
                 <div class="home-card-cta d-flex flex-row align-self-center justify-content-between w-100">
-                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-secondary-outline">More Info</a>
+                  <a href="/portal/catalogue-products/{{ .Path }}" class="btn btn-primary">Getting Started</a>
                   <div class="api-product-page__header card__action-buttons d-flex align-self-center">
                   {{ range .APIDetails }}
                     {{ $oasfile := gt (.OASDocument.Base.Url | trim | length) 0 }}
@@ -255,26 +255,28 @@
           {{ end }}
         </div>
         <div class="col-12 text-center mt-3">
-          <a href="{{.blocks.FeaturedProductsLink.Content}}" class="btn btn-secondary-outline on-dark">{{ safe .blocks.FeaturedProductsLinkLabel.Content}}</a>
+          <a href="{{.blocks.FeaturedProductsLink.Content}}" class="btn btn-secondary on-dark">{{ safe .blocks.FeaturedProductsLinkLabel.Content}}</a>
         </div>
       </div>
     </div>
     {{ else }}
       {{if $user }}
         {{ if eq $user.Role "provider-admin"}}
-          <div class="row dark-to-light-bg p-5">
+          <!--
+          <div class="row p-5">
             <div class="col-md-12 text-center text-white">
               <h4>There are no featured API products yet</h4>
               <p>Create a product or mark one as featured</p>
             </div>
           </div>
+          -->
         {{ end }}
       {{end}}
     {{ end }}
   <!-- end of Featured APIs -->
 
   <!-- Partners -->
-  <div class="row light-to-dark-bg p-5 partners-wrapper">
+  <div class="row p-5 partners-wrapper">
     <div class="col-12 text-center text-white mb-5">
       <h2>{{ safe .blocks.PartnersTitle.Content}}</h2>
       <p>
