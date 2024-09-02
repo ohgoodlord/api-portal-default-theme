@@ -143,3 +143,16 @@ body {
 .container {
     max-width: 1230px;
 }
+
+/* Swagger UI - Tweak Download Link */
+#swagger-ui div.information-container.wrapper span.url::before {
+    visibility: visible;
+    content: "Download API Specification";
+    display: block;
+}
+#swagger-ui div.information-container.wrapper span.url {
+    margin: 5px 0 30px 0;
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
