@@ -1,5 +1,6 @@
 <!-- Template used for viewing a particular Product -->
 
+
 {{ $thisProduct := .product }}
 {{ $user := CurrentUser req }}
 {{$catalogues_for_product := GetCataloguesForProduct req $user $thisProduct.ID}}
@@ -83,7 +84,6 @@
     <div class="step-wrapper tabs-wrapper d-flex flex-row">
         {{/*      <span class="step active tab">Overview</span>*/}}
       <span class="step active tab">Getting Started</span>
-      <span class="step tab">API Specifications</span>
     </div>
   </div>
   <div class="content-wrapper">
@@ -337,41 +337,7 @@
             </div>
           {{end}}
       </div>
-      <div class="content-wrapper__content d-none">
-        <div id="swagger-ui"></div>
-      </div>
     </div>
   </div>
   <div class="d-none" id="success-msg">Value has been copied successfully</div>
-
-  <script>
-      window.onload = () => {
-          window.ui = SwaggerUIBundle({
-              urls: [
-                  {{ range $index, $api_detail := $thisProduct.APIDetails }}
-                  {{ $oasfile := gt ($api_detail.OASDocument.Base.Url | trim | length) 0 }}
-                  {{ $oasurl := gt ($api_detail.OASUrl | trim | length) 0 }}
-                  {{ if or $oasfile $oasurl }}
-                  {{$url := ""}}
-                  {{if $oasfile }}
-                  {{$url = .OASDocument.Base.Url}}
-                  {{else}}
-                  {{$url = .OASUrl}}
-                  {{end}}
-                  {
-                      url: {{$url}},
-                      name: {{$api_detail.Name}},
-                  },
-                  {{end}}
-                  {{end}}
-              ],
-              dom_id: '#swagger-ui',
-              deepLinking: true,
-              presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
-              plugins: [
-                  SwaggerUIBundle.plugins.Topbar
-              ]
-          });
-      };
-  </script>
 </div>

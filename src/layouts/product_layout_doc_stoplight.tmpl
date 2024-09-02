@@ -13,19 +13,10 @@
     <link href="/assets/stylesheets/fonts.css" rel="stylesheet">
     <link href="/assets/stylesheets/main.css" rel="stylesheet">
 
-    <!-- stoplight.io -->    
-    <script src="https://unpkg.com/@stoplight/elements/web-components.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/@stoplight/elements/styles.min.css">
-<script>
-    function loadFallbackScript(src) {
-    let script = document.createElement('script');
-    script.src = src;
-    script.async = true;
-    document.head.appendChild(script);
-    }
-    </script>
-    <script src="https://unpkg.com/@stoplight/elements/web-components.min.js" onerror="loadFallbackScript('/assets/vendor/stoplight/elements/web-components.min.js')" async></script>
-    <link rel="preload" href="https://unpkg.com/@stoplight/elements/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.onerror=null;this.href='/assets/vendor/stoplight/elements/styles.min.css'">
+    <!-- Load SwaggerUI -->
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js" crossorigin></script>
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.js"></script>
 </head>
 <body>
 
