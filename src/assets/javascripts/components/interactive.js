@@ -106,13 +106,9 @@ export function Interactive({
       let footer = document.querySelector("footer");
       let activeTab = stepsCollection[stepIndex];
       let redoc = document.getElementById("redoc-wrapper");
-      if (activeTab && activeTab.innerHTML != "API SPECIFICATIONS") {
+      if (activeTab && activeTab.innerHTML != "API Specifications") {
         footer.style.marginTop = "0px";
-      } else if (
-        activeTab &&
-        activeTab.innerHTML == "API SPECIFICATIONS" &&
-        redoc
-      ) {
+      } else if (activeTab && activeTab.innerHTML == "API Specifications" && redoc ){
         footer.style.marginTop = redoc.clientHeight + "px";
       }
     });
@@ -249,58 +245,15 @@ function initRedoc(url) {
   let wrapper = getOrCreateWrapper(apiDocWrapper, "redoc-wrapper");
 
   if (Redoc) {
-    Redoc.init(
-      url,
-      {
-        scrollYOffset: ".navbar",
-      },
-      wrapper,
-      (redoc) => {
-        let footer = document.querySelector("footer");
-        let activeTab = document.querySelector(".step.active.tab");
-        if (activeTab?.innerHTML == "API SPECIFICATIONS") {
-          footer.style.marginTop = wrapper.clientHeight + "px";
-        }
-      },
-    );
-  }
-}
-
-function initAsyncApi(url) {
-  let apiDocWrapper = document.getElementById("api_doc_wrapper");
-
-  hideAllElements(apiDocWrapper);
-
-  let wrapper = getOrCreateWrapper(apiDocWrapper, "asyncapi");
-
-  if (AsyncApiStandalone) {
-    AsyncApiStandalone.render(
-      {
-        schema: {
-          url: url,
-          options: { method: "GET", mode: "cors" },
-        },
-        config: {
-          show: {
-            sidebar: false,
-            info: true,
-            operations: true,
-            servers: true,
-            messages: true,
-            schemas: true,
-            errors: true,
-          },
-          expand: {
-            messageExamples: false,
-          },
-          sidebar: {
-            showServers: "byDefault",
-            showOperations: "byDefault",
-          },
-        },
-      },
-      wrapper,
-    );
+    Redoc.init(url, { 
+      scrollYOffset: ".navbar",
+    }, wrapper, (redoc) => {
+      let footer = document.querySelector("footer");
+      let activeTab = document.querySelector(".step.active.tab");
+      if (activeTab?.innerHTML == "API Specifications") {
+        footer.style.marginTop = wrapper.clientHeight + "px";
+      }
+    })
   }
 }
 

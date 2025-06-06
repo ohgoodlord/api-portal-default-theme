@@ -13,7 +13,6 @@ footer .footer-menu__link {
 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--tdp-nav-link-color);
-  font-family: 'OpenSans-Semibold';
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -51,7 +50,6 @@ footer .footer-menu__link {
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: var(--tdp-nav-link-color);
-  text-transform: uppercase;
 }
 
 .navbar .nav-link {
@@ -62,7 +60,6 @@ footer .footer-menu__link {
 .navbar .navbar-brand {
   font-size: 20px;
   margin-right: 40px;
-  font-family: 'OpenSans-Bold';
 }
 
 .btn-login {
@@ -119,7 +116,6 @@ footer .footer-menu__link {
 
 .admin-dash {
   text-decoration: underline;
-  font-family: 'OpenSans-SemiBold';
 }
 
 .side-menu-container{
